@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/SD_projects/SD Projeto 2/MultNDigit/test_MultNDigit_isim_beh.exe" -prj "/home/ise/SD_projects/SD Projeto 2/MultNDigit/test_MultNDigit_beh.prj" "work.test_MultNDigit" 

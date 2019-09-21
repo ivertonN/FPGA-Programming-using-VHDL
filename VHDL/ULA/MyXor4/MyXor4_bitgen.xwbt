@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/centurio/SD projects/MyXor4/MyXor4.ncd
+OUTFILE=/home/centurio/SD projects/MyXor4/MyXor4.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s700an-4fgg484
+WORKINGDIR=/home/centurio/SD projects/MyXor4
+LICENSE=WebPack
+USER_INFO=211710078_0_0_057

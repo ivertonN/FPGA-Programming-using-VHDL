@@ -1,0 +1,782 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> 
+Reading design: MyULAInterface.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MyULAInterface.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MyULAInterface"
+Output Format                      : NGC
+Target Device                      : xc3s700an-4-fgg484
+
+---- Source Options
+Top Module Name                    : MyULAInterface
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/centurio/SD projects/MySum1/MySum1.vhd" in Library work.
+Entity <MySum1> compiled.
+Entity <MySum1> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/centurio/SD projects/Not4/Not4.vhd" in Library work.
+Entity <Not4> compiled.
+Entity <Not4> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/centurio/SD projects/MySum4/MySum4.vhd" in Library work.
+Entity <MySum4> compiled.
+Entity <MySum4> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/centurio/SD projects/MyFourBit2Complement/MyFourBit2Complement.vhd" in Library work.
+Entity <MyFourBit2Complement> compiled.
+Entity <MyFourBit2Complement> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/centurio/SD projects/MyAnd4/MyAnd4.vhd" in Library work.
+Entity <MyAnd4> compiled.
+Entity <MyAnd4> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/centurio/SD projects/MyOr4/MyOr4.vhd" in Library work.
+Entity <MyOr4> compiled.
+Entity <MyOr4> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/centurio/SD projects/MyXor4/MyXor4.vhd" in Library work.
+Entity <MyXor4> compiled.
+Entity <MyXor4> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/centurio/SD projects/MyPlus1/MyPlus1.vhd" in Library work.
+Entity <MyPlus1> compiled.
+Entity <MyPlus1> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/centurio/SD projects/MySub4/MySub4.vhd" in Library work.
+Entity <MySub4> compiled.
+Entity <MySub4> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/centurio/SD projects/MyFourBitMultiplier/MyFourBitMultiplier.vhd" in Library work.
+Entity <MyFourBitMultiplier> compiled.
+Entity <MyFourBitMultiplier> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/centurio/SD projects/MyULA/MyULA.vhd" in Library work.
+Entity <MyULA> compiled.
+Entity <MyULA> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/centurio/SD projects/contador6sec/contador6sec.vhd" in Library work.
+Entity <contador6sec> compiled.
+Entity <contador6sec> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/centurio/SD projects/MyULAInterface/MyULAInterface.vhd" in Library work.
+Entity <MyULAInterface> compiled.
+Entity <MyULAInterface> (Architecture <interface>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <MyULAInterface> in library <work> (architecture <interface>).
+
+Analyzing hierarchy for entity <MyULA> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <contador6sec> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MyAnd4> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MyOr4> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Not4> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MyXor4> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MySum4> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MyPlus1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MySub4> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MyFourBitMultiplier> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MySum1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MySum4> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MyFourBit2Complement> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MySum1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MySum1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MySum1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MySum1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MySum1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MySum1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MySum1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Not4> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MySum4> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MySum1> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <MyULAInterface> in library <work> (Architecture <interface>).
+Entity <MyULAInterface> analyzed. Unit <MyULAInterface> generated.
+
+Analyzing Entity <MyULA> in library <work> (Architecture <Behavioral>).
+Entity <MyULA> analyzed. Unit <MyULA> generated.
+
+Analyzing Entity <MyAnd4> in library <work> (Architecture <Behavioral>).
+Entity <MyAnd4> analyzed. Unit <MyAnd4> generated.
+
+Analyzing Entity <MyOr4> in library <work> (Architecture <Behavioral>).
+Entity <MyOr4> analyzed. Unit <MyOr4> generated.
+
+Analyzing Entity <Not4> in library <work> (Architecture <Behavioral>).
+Entity <Not4> analyzed. Unit <Not4> generated.
+
+Analyzing Entity <MyXor4> in library <work> (Architecture <Behavioral>).
+Entity <MyXor4> analyzed. Unit <MyXor4> generated.
+
+Analyzing Entity <MySum4> in library <work> (Architecture <Behavioral>).
+Entity <MySum4> analyzed. Unit <MySum4> generated.
+
+Analyzing Entity <MySum1> in library <work> (Architecture <Behavioral>).
+Entity <MySum1> analyzed. Unit <MySum1> generated.
+
+Analyzing Entity <MyPlus1> in library <work> (Architecture <Behavioral>).
+Entity <MyPlus1> analyzed. Unit <MyPlus1> generated.
+
+Analyzing Entity <MySub4> in library <work> (Architecture <Behavioral>).
+Entity <MySub4> analyzed. Unit <MySub4> generated.
+
+Analyzing Entity <MyFourBit2Complement> in library <work> (Architecture <Behavioral>).
+Entity <MyFourBit2Complement> analyzed. Unit <MyFourBit2Complement> generated.
+
+Analyzing Entity <MyFourBitMultiplier> in library <work> (Architecture <Behavioral>).
+Entity <MyFourBitMultiplier> analyzed. Unit <MyFourBitMultiplier> generated.
+
+Analyzing Entity <contador6sec> in library <work> (Architecture <Behavioral>).
+Entity <contador6sec> analyzed. Unit <contador6sec> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <contador6sec>.
+    Related source file is "/home/centurio/SD projects/contador6sec/contador6sec.vhd".
+    Found 1-bit register for signal <clk_6sec>.
+    Found 29-bit up counter for signal <counterTemp>.
+    Found 29-bit comparator greatequal for signal <counterTemp$cmp_ge0000> created at line 63.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <contador6sec> synthesized.
+
+
+Synthesizing Unit <MyAnd4>.
+    Related source file is "/home/centurio/SD projects/MyAnd4/MyAnd4.vhd".
+Unit <MyAnd4> synthesized.
+
+
+Synthesizing Unit <MyOr4>.
+    Related source file is "/home/centurio/SD projects/MyOr4/MyOr4.vhd".
+Unit <MyOr4> synthesized.
+
+
+Synthesizing Unit <Not4>.
+    Related source file is "/home/centurio/SD projects/Not4/Not4.vhd".
+Unit <Not4> synthesized.
+
+
+Synthesizing Unit <MyXor4>.
+    Related source file is "/home/centurio/SD projects/MyXor4/MyXor4.vhd".
+    Found 4-bit xor2 for signal <Z>.
+Unit <MyXor4> synthesized.
+
+
+Synthesizing Unit <MySum1>.
+    Related source file is "/home/centurio/SD projects/MySum1/MySum1.vhd".
+    Found 1-bit xor3 for signal <S>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <MySum1> synthesized.
+
+
+Synthesizing Unit <MySum4>.
+    Related source file is "/home/centurio/SD projects/MySum4/MySum4.vhd".
+Unit <MySum4> synthesized.
+
+
+Synthesizing Unit <MyPlus1>.
+    Related source file is "/home/centurio/SD projects/MyPlus1/MyPlus1.vhd".
+Unit <MyPlus1> synthesized.
+
+
+Synthesizing Unit <MyFourBitMultiplier>.
+    Related source file is "/home/centurio/SD projects/MyFourBitMultiplier/MyFourBitMultiplier.vhd".
+Unit <MyFourBitMultiplier> synthesized.
+
+
+Synthesizing Unit <MyFourBit2Complement>.
+    Related source file is "/home/centurio/SD projects/MyFourBit2Complement/MyFourBit2Complement.vhd".
+Unit <MyFourBit2Complement> synthesized.
+
+
+Synthesizing Unit <MySub4>.
+    Related source file is "/home/centurio/SD projects/MySub4/MySub4.vhd".
+Unit <MySub4> synthesized.
+
+
+Synthesizing Unit <MyULA>.
+    Related source file is "/home/centurio/SD projects/MyULA/MyULA.vhd".
+WARNING:Xst:646 - Signal <saidaMyMult4<7:4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit 8-to-1 multiplexer for signal <saidaZ>.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <MyULA> synthesized.
+
+
+Synthesizing Unit <MyULAInterface>.
+    Related source file is "/home/centurio/SD projects/MyULAInterface/MyULAInterface.vhd".
+WARNING:Xst:646 - Signal <indiceEstado> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clk_6sec> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <CarryBorrow> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1608 - Relative priorities of control signals on register <ledSelecao> differ from those commonly found in the selected device family. This will result in additional logic around the register.
+    Found finite state machine <FSM_0> for signal <estado_Atual>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 5                                              |
+    | Clock              | botaoEntrada              (rising_edge)        |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | state_a                                        |
+    | Power Up State     | state_a                                        |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit register for signal <ledSelecao>.
+    Found 29-bit comparator less for signal <mux0000$cmp_lt0000> created at line 113.
+    Found 29-bit comparator less for signal <mux0000$cmp_lt0001> created at line 115.
+    Found 3-bit register for signal <SeletorOperacao>.
+    Found 4-bit register for signal <XTemp>.
+    Found 4-bit register for signal <YTemp>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <MyULAInterface> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 29-bit up counter                                     : 1
+# Registers                                            : 5
+ 1-bit register                                        : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 3
+# Comparators                                          : 3
+ 29-bit comparator greatequal                          : 1
+ 29-bit comparator less                                : 2
+# Multiplexers                                         : 1
+ 4-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 53
+ 1-bit xor2                                            : 4
+ 1-bit xor3                                            : 49
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <estado_Atual/FSM> on signal <estado_Atual[1:4]> with one-hot encoding.
+----------------------------
+ State          | Encoding
+----------------------------
+ state_a        | 0001
+ state_b        | 0010
+ state_operacao | 0100
+ state_result   | 1000
+----------------------------
+WARNING:Xst:1290 - Hierarchical block <Sum4> is unconnected in block <Sum1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Sum7> is unconnected in block <Sum1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Sum3> is unconnected in block <Sum2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Sum4> is unconnected in block <Sum2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Sum6> is unconnected in block <Sum2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Sum7> is unconnected in block <Sum2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Sum2> is unconnected in block <Sum3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Sum3> is unconnected in block <Sum3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Sum4> is unconnected in block <Sum3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Sum5> is unconnected in block <Sum3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Sum6> is unconnected in block <Sum3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Sum7> is unconnected in block <Sum3>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 1
+ 29-bit up counter                                     : 1
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+# Comparators                                          : 3
+ 29-bit comparator greatequal                          : 1
+ 29-bit comparator less                                : 2
+# Multiplexers                                         : 1
+ 4-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 53
+ 1-bit xor2                                            : 4
+ 1-bit xor3                                            : 49
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <MyULAInterface> ...
+
+Optimizing unit <contador6sec> ...
+
+Optimizing unit <MyULA> ...
+WARNING:Xst:2677 - Node <contador6Segundos/clk_6sec> of sequential type is unconnected in block <MyULAInterface>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MyULAInterface, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 48
+ Flip-Flops                                            : 48
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MyULAInterface.ngr
+Top Level Output File Name         : MyULAInterface
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 15
+
+Cell Usage :
+# BELS                             : 240
+#      GND                         : 1
+#      INV                         : 9
+#      LUT1                        : 10
+#      LUT2                        : 17
+#      LUT3                        : 55
+#      LUT4                        : 44
+#      MUXCY                       : 59
+#      MUXF5                       : 11
+#      MUXF6                       : 4
+#      VCC                         : 1
+#      XORCY                       : 29
+# FlipFlops/Latches                : 48
+#      FDC                         : 34
+#      FDCE                        : 9
+#      FDCP                        : 4
+#      FDP                         : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 6
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s700anfgg484-4 
+
+ Number of Slices:                       73  out of   5888     1%  
+ Number of Slice Flip Flops:             48  out of  11776     0%  
+ Number of 4 input LUTs:                135  out of  11776     1%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    372     4%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+botaoEntrada                       | IBUF+BUFG              | 19    |
+clk_50Mhz                          | BUFGP                  | 29    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------+------------------------+-------+
+Control Signal                               | Buffer(FF name)        | Load  |
+---------------------------------------------+------------------------+-------+
+botaoEntrada                                 | IBUF                   | 29    |
+rst                                          | IBUF                   | 15    |
+N0(XST_GND:G)                                | NONE(ledSelecao_1)     | 1     |
+ledSelecao_0__and0000(led_Show<0>31:O)       | NONE(ledSelecao_0)     | 1     |
+ledSelecao_0__or0000(ledSelecao_0__or00001:O)| NONE(ledSelecao_0)     | 1     |
+ledSelecao_1__or0000(ledSelecao_1__or00001:O)| NONE(ledSelecao_1)     | 1     |
+ledSelecao_2__and0000(led_Show<0>22:O)       | NONE(ledSelecao_2)     | 1     |
+ledSelecao_2__or0000(ledSelecao_2__or00001:O)| NONE(ledSelecao_2)     | 1     |
+ledSelecao_3__and0000(led_Show<0>211:O)      | NONE(ledSelecao_3)     | 1     |
+ledSelecao_3__or0000(ledSelecao_3__or00001:O)| NONE(ledSelecao_3)     | 1     |
+---------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.694ns (Maximum Frequency: 115.027MHz)
+   Minimum input arrival time before clock: 2.368ns
+   Maximum output required time after clock: 13.753ns
+   Maximum combinational path delay: 9.449ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'botaoEntrada'
+  Clock period: 3.901ns (frequency: 256.345MHz)
+  Total number of paths / destination ports: 33 / 18
+-------------------------------------------------------------------------
+Delay:               3.901ns (Levels of Logic = 2)
+  Source:            estado_Atual_FSM_FFd1 (FF)
+  Destination:       SeletorOperacao_0 (FF)
+  Source Clock:      botaoEntrada rising
+  Destination Clock: botaoEntrada rising
+
+  Data Path: estado_Atual_FSM_FFd1 to SeletorOperacao_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            19   0.591   1.228  estado_Atual_FSM_FFd1 (estado_Atual_FSM_FFd1)
+     LUT2:I0->O            3   0.648   0.534  estado_Atual_FSM_FFd1-In1 (estado_Atual_FSM_FFd1-In)
+     LUT4:I3->O            1   0.648   0.000  SeletorOperacao_mux0000<2>1 (SeletorOperacao_mux0000<2>)
+     FDC:D                     0.252          SeletorOperacao_2
+    ----------------------------------------
+    Total                      3.901ns (2.139ns logic, 1.762ns route)
+                                       (54.8% logic, 45.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_50Mhz'
+  Clock period: 8.694ns (frequency: 115.027MHz)
+  Total number of paths / destination ports: 10179 / 29
+-------------------------------------------------------------------------
+Delay:               8.694ns (Levels of Logic = 40)
+  Source:            contador6Segundos/counterTemp_8 (FF)
+  Destination:       contador6Segundos/counterTemp_28 (FF)
+  Source Clock:      clk_50Mhz rising
+  Destination Clock: clk_50Mhz rising
+
+  Data Path: contador6Segundos/counterTemp_8 to contador6Segundos/counterTemp_28
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.591   0.674  contador6Segundos/counterTemp_8 (contador6Segundos/counterTemp_8)
+     LUT2:I0->O            1   0.648   0.000  contador6Segundos/Mcompar_counterTemp_cmp_ge0000_lut<0> (contador6Segundos/Mcompar_counterTemp_cmp_ge0000_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  contador6Segundos/Mcompar_counterTemp_cmp_ge0000_cy<0> (contador6Segundos/Mcompar_counterTemp_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcompar_counterTemp_cmp_ge0000_cy<1> (contador6Segundos/Mcompar_counterTemp_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcompar_counterTemp_cmp_ge0000_cy<2> (contador6Segundos/Mcompar_counterTemp_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcompar_counterTemp_cmp_ge0000_cy<3> (contador6Segundos/Mcompar_counterTemp_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcompar_counterTemp_cmp_ge0000_cy<4> (contador6Segundos/Mcompar_counterTemp_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcompar_counterTemp_cmp_ge0000_cy<5> (contador6Segundos/Mcompar_counterTemp_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcompar_counterTemp_cmp_ge0000_cy<6> (contador6Segundos/Mcompar_counterTemp_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcompar_counterTemp_cmp_ge0000_cy<7> (contador6Segundos/Mcompar_counterTemp_cmp_ge0000_cy<7>)
+     MUXCY:CI->O          30   0.269   1.294  contador6Segundos/Mcompar_counterTemp_cmp_ge0000_cy<8> (contador6Segundos/counterTemp_cmp_ge0000)
+     LUT3:I2->O            1   0.648   0.000  contador6Segundos/Mcount_counterTemp_lut<0> (contador6Segundos/Mcount_counterTemp_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  contador6Segundos/Mcount_counterTemp_cy<0> (contador6Segundos/Mcount_counterTemp_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<1> (contador6Segundos/Mcount_counterTemp_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<2> (contador6Segundos/Mcount_counterTemp_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<3> (contador6Segundos/Mcount_counterTemp_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<4> (contador6Segundos/Mcount_counterTemp_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<5> (contador6Segundos/Mcount_counterTemp_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<6> (contador6Segundos/Mcount_counterTemp_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<7> (contador6Segundos/Mcount_counterTemp_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<8> (contador6Segundos/Mcount_counterTemp_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<9> (contador6Segundos/Mcount_counterTemp_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<10> (contador6Segundos/Mcount_counterTemp_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<11> (contador6Segundos/Mcount_counterTemp_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<12> (contador6Segundos/Mcount_counterTemp_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<13> (contador6Segundos/Mcount_counterTemp_cy<13>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<14> (contador6Segundos/Mcount_counterTemp_cy<14>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<15> (contador6Segundos/Mcount_counterTemp_cy<15>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<16> (contador6Segundos/Mcount_counterTemp_cy<16>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<17> (contador6Segundos/Mcount_counterTemp_cy<17>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<18> (contador6Segundos/Mcount_counterTemp_cy<18>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<19> (contador6Segundos/Mcount_counterTemp_cy<19>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<20> (contador6Segundos/Mcount_counterTemp_cy<20>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<21> (contador6Segundos/Mcount_counterTemp_cy<21>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<22> (contador6Segundos/Mcount_counterTemp_cy<22>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<23> (contador6Segundos/Mcount_counterTemp_cy<23>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<24> (contador6Segundos/Mcount_counterTemp_cy<24>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<25> (contador6Segundos/Mcount_counterTemp_cy<25>)
+     MUXCY:CI->O           1   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<26> (contador6Segundos/Mcount_counterTemp_cy<26>)
+     MUXCY:CI->O           0   0.065   0.000  contador6Segundos/Mcount_counterTemp_cy<27> (contador6Segundos/Mcount_counterTemp_cy<27>)
+     XORCY:CI->O           1   0.844   0.000  contador6Segundos/Mcount_counterTemp_xor<28> (contador6Segundos/Mcount_counterTemp28)
+     FDC:D                     0.252          contador6Segundos/counterTemp_28
+    ----------------------------------------
+    Total                      8.694ns (6.726ns logic, 1.968ns route)
+                                       (77.4% logic, 22.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'botaoEntrada'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              2.368ns (Levels of Logic = 2)
+  Source:            entradaUla<0> (PAD)
+  Destination:       SeletorOperacao_0 (FF)
+  Destination Clock: botaoEntrada rising
+
+  Data Path: entradaUla<0> to SeletorOperacao_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.849   0.619  entradaUla_0_IBUF (entradaUla_0_IBUF)
+     LUT4:I2->O            1   0.648   0.000  SeletorOperacao_mux0000<0>1 (SeletorOperacao_mux0000<0>)
+     FDC:D                     0.252          SeletorOperacao_0
+    ----------------------------------------
+    Total                      2.368ns (1.749ns logic, 0.619ns route)
+                                       (73.9% logic, 26.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_50Mhz'
+  Total number of paths / destination ports: 248 / 4
+-------------------------------------------------------------------------
+Offset:              12.613ns (Levels of Logic = 16)
+  Source:            contador6Segundos/counterTemp_8 (FF)
+  Destination:       led_Show<3> (PAD)
+  Source Clock:      clk_50Mhz rising
+
+  Data Path: contador6Segundos/counterTemp_8 to led_Show<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.591   0.674  contador6Segundos/counterTemp_8 (contador6Segundos/counterTemp_8)
+     LUT1:I0->O            1   0.648   0.000  Mcompar_mux0000_cmp_lt0000_cy<0>_rt (Mcompar_mux0000_cmp_lt0000_cy<0>_rt)
+     MUXCY:S->O            1   0.632   0.000  Mcompar_mux0000_cmp_lt0000_cy<0> (Mcompar_mux0000_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_mux0000_cmp_lt0000_cy<1> (Mcompar_mux0000_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_mux0000_cmp_lt0000_cy<2> (Mcompar_mux0000_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_mux0000_cmp_lt0000_cy<3> (Mcompar_mux0000_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_mux0000_cmp_lt0000_cy<4> (Mcompar_mux0000_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_mux0000_cmp_lt0000_cy<5> (Mcompar_mux0000_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_mux0000_cmp_lt0000_cy<6> (Mcompar_mux0000_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_mux0000_cmp_lt0000_cy<7> (Mcompar_mux0000_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_mux0000_cmp_lt0000_cy<8> (Mcompar_mux0000_cmp_lt0000_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  Mcompar_mux0000_cmp_lt0000_cy<9> (Mcompar_mux0000_cmp_lt0000_cy<9>)
+     MUXCY:CI->O          16   0.269   1.177  Mcompar_mux0000_cmp_lt0000_cy<10> (Mcompar_mux0000_cmp_lt0000_cy<10>)
+     LUT2:I0->O            2   0.648   0.590  led_Show<0>41 (N4)
+     LUT4:I0->O            1   0.648   0.563  led_Show<3>4 (led_Show<3>4)
+     LUT4:I0->O            1   0.648   0.420  led_Show<3>20 (led_Show_3_OBUF)
+     OBUF:I->O                 4.520          led_Show_3_OBUF (led_Show<3>)
+    ----------------------------------------
+    Total                     12.613ns (9.189ns logic, 3.424ns route)
+                                       (72.9% logic, 27.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'botaoEntrada'
+  Total number of paths / destination ports: 165 / 8
+-------------------------------------------------------------------------
+Offset:              13.753ns (Levels of Logic = 9)
+  Source:            XTemp_2 (FF)
+  Destination:       led_Show<3> (PAD)
+  Source Clock:      botaoEntrada rising
+
+  Data Path: XTemp_2 to led_Show<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            15   0.591   1.160  XTemp_2 (XTemp_2)
+     LUT2:I0->O            3   0.648   0.674  UnidadeLogicoAritmetica/TMySum4/Y<1>1 (UnidadeLogicoAritmetica/TMySum4/Y<1>)
+     LUT4:I0->O            1   0.648   0.563  UnidadeLogicoAritmetica/TMySum4/Sum6/Cout1 (UnidadeLogicoAritmetica/TMySum4/C<1>)
+     LUT4:I0->O            1   0.648   0.500  UnidadeLogicoAritmetica/TMySum4/Sum7/Mxor_S_xo<0>1 (UnidadeLogicoAritmetica/saidaMySum4<3>)
+     LUT3:I1->O            1   0.643   0.000  UnidadeLogicoAritmetica/Mmux_saidaZ_56 (UnidadeLogicoAritmetica/Mmux_saidaZ_56)
+     MUXF5:I0->O           1   0.276   0.000  UnidadeLogicoAritmetica/Mmux_saidaZ_3_f5_2 (UnidadeLogicoAritmetica/Mmux_saidaZ_3_f53)
+     MUXF6:I1->O           1   0.291   0.452  UnidadeLogicoAritmetica/Mmux_saidaZ_2_f6_2 (SaidaZ<3>)
+     LUT3:I2->O            1   0.648   0.423  led_Show<3>20_SW0 (N14)
+     LUT4:I3->O            1   0.648   0.420  led_Show<3>20 (led_Show_3_OBUF)
+     OBUF:I->O                 4.520          led_Show_3_OBUF (led_Show<3>)
+    ----------------------------------------
+    Total                     13.753ns (9.561ns logic, 4.192ns route)
+                                       (69.5% logic, 30.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Delay:               9.449ns (Levels of Logic = 5)
+  Source:            entradaUla<2> (PAD)
+  Destination:       led_Show<2> (PAD)
+
+  Data Path: entradaUla<2> to led_Show<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.849   0.730  entradaUla_2_IBUF (entradaUla_2_IBUF)
+     LUT4:I0->O            1   0.648   0.423  led_Show<2>8_SW0 (N28)
+     LUT4:I3->O            1   0.648   0.563  led_Show<2>8 (led_Show<2>8)
+     LUT4:I0->O            1   0.648   0.420  led_Show<2>27 (led_Show_2_OBUF)
+     OBUF:I->O                 4.520          led_Show_2_OBUF (led_Show<2>)
+    ----------------------------------------
+    Total                      9.449ns (7.313ns logic, 2.136ns route)
+                                       (77.4% logic, 22.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 5.36 secs
+ 
+--> 
+
+
+Total memory usage is 520824 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

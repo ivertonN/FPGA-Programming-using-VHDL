@@ -1,0 +1,36 @@
+
+#ucf do lcd
+############
+NET "LCD_DB[0]" LOC = Y13;
+
+# PlanAhead Generated physical constraints 
+
+NET "LCD_DB[1]" LOC = AB18;
+NET "LCD_DB[2]" LOC = AB17;
+NET "LCD_DB[3]" LOC = AB12;
+NET "LCD_DB[4]" LOC = AA12;
+NET "LCD_DB[5]" LOC = Y16;
+NET "LCD_DB[6]" LOC = AB16;
+NET "LCD_DB[7]" LOC = Y15;
+NET "OE" LOC = AB4;
+NET "RS" LOC = Y14;
+NET "RW" LOC = W13;
+NET "rst" LOC = T15;
+
+#ucf do teclado
+#######
+
+#clk
+NET "clkPlaca"       LOC = "E12"  | IOSTANDARD = LVCMOS33 | PERIOD = 20.000 ;
+OFFSET = IN  10.000 VALID 20.000 BEFORE "clkPlaca" ;
+OFFSET = OUT 20.000 AFTER "clkPlaca" ;
+
+# Primary connection, simply plug device into connector.
+#ps2c
+NET "ps2c"      LOC = "W12"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#ps2d
+NET "ps2d"     LOC = "V11"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+
+#operacao
+NET "operacao"         LOC = "V8"   | IOSTANDARD = LVCMOS33 ;
+

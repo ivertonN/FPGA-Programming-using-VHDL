@@ -1,0 +1,46 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/centurio/SD projects/MyULAInterface/UlaInterface_test_isim_beh.exe -prj /home/centurio/SD projects/MyULAInterface/UlaInterface_test_beh.prj work.UlaInterface_test 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/centurio/SD projects/MyULAInterface/../MySum1/MySum1.vhd" into library work
+Parsing VHDL file "/home/centurio/SD projects/MyULAInterface/../Not4/Not4.vhd" into library work
+Parsing VHDL file "/home/centurio/SD projects/MyULAInterface/../MySum4/MySum4.vhd" into library work
+Parsing VHDL file "/home/centurio/SD projects/MyULAInterface/../MyFourBit2Complement/MyFourBit2Complement.vhd" into library work
+Parsing VHDL file "/home/centurio/SD projects/MyULAInterface/../MyXor4/MyXor4.vhd" into library work
+Parsing VHDL file "/home/centurio/SD projects/MyULAInterface/../MySub4/MySub4.vhd" into library work
+Parsing VHDL file "/home/centurio/SD projects/MyULAInterface/../MyPlus1/MyPlus1.vhd" into library work
+Parsing VHDL file "/home/centurio/SD projects/MyULAInterface/../MyOr4/MyOr4.vhd" into library work
+Parsing VHDL file "/home/centurio/SD projects/MyULAInterface/../MyFourBitMultiplier/MyFourBitMultiplier.vhd" into library work
+Parsing VHDL file "/home/centurio/SD projects/MyULAInterface/../MyAnd4/MyAnd4.vhd" into library work
+Parsing VHDL file "/home/centurio/SD projects/MyULAInterface/../MyULA/MyULA.vhd" into library work
+Parsing VHDL file "/home/centurio/SD projects/MyULAInterface/../contador6sec/contador6sec.vhd" into library work
+Parsing VHDL file "/home/centurio/SD projects/MyULAInterface/MyULAInterface.vhd" into library work
+Parsing VHDL file "/home/centurio/SD projects/MyULAInterface/UlaInterface_test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 96500 KB
+Fuse CPU Usage: 1170 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity MyAnd4 [myand4_default]
+Compiling architecture behavioral of entity MyOr4 [myor4_default]
+Compiling architecture behavioral of entity Not4 [not4_default]
+Compiling architecture behavioral of entity MyXor4 [myxor4_default]
+Compiling architecture behavioral of entity MySum1 [mysum1_default]
+Compiling architecture behavioral of entity MySum4 [mysum4_default]
+Compiling architecture behavioral of entity MyPlus1 [myplus1_default]
+Compiling architecture behavioral of entity MyFourBit2Complement [myfourbit2complement_default]
+Compiling architecture behavioral of entity MySub4 [mysub4_default]
+Compiling architecture behavioral of entity MyFourBitMultiplier [myfourbitmultiplier_default]
+Compiling architecture behavioral of entity MyULA [myula_default]
+Compiling architecture behavioral of entity contador6sec [contador6sec_default]
+Compiling architecture interface of entity MyULAInterface [myulainterface_default]
+Compiling architecture behavior of entity ulainterface_test
+Time Resolution for simulation is 1ps.
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 29 VHDL Units
+Built simulation executable /home/centurio/SD projects/MyULAInterface/UlaInterface_test_isim_beh.exe
+Fuse Memory Usage: 662228 KB
+Fuse CPU Usage: 1220 ms
+GCC CPU Usage: 1270 ms

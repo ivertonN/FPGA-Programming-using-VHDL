@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/iverton/Documentos/SD Projeto 2 atual/MultOneDigit/MultOneDigit.ncd
+OUTFILE=/home/iverton/Documentos/SD Projeto 2 atual/MultOneDigit/MultOneDigit.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s700an-4fgg484
+WORKINGDIR=/home/iverton/Documentos/SD Projeto 2 atual/MultOneDigit
+LICENSE=WebPack
+USER_INFO=211710078_0_0_733

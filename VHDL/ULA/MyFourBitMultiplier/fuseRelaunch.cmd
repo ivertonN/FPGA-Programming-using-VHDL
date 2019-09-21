@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/centurio/SD projects/MyFourBitMultiplier/TestFourBitMultiplier_isim_beh.exe" -prj "/home/centurio/SD projects/MyFourBitMultiplier/TestFourBitMultiplier_beh.prj" "work.TestFourBitMultiplier" 

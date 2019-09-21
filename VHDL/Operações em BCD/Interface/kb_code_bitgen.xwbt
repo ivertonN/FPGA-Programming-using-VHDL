@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/SD_projects/SD Projeto 2/Interface/kb_code.ncd
+OUTFILE=/home/ise/SD_projects/SD Projeto 2/Interface/kb_code.bit
+FAMILY=Automotive Spartan6
+PART=xa6slx4-3csg225
+WORKINGDIR=/home/ise/SD_projects/SD Projeto 2/Interface
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

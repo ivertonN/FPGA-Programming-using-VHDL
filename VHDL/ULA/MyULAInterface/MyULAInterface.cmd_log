@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/centurio/SD projects/MyULAInterface/MyULAInterface.xst" -ofn "/home/centurio/SD projects/MyULAInterface/MyULAInterface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 "MyULAInterface.ngc" MyULAInterface.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o MyULAInterface_map.ncd MyULAInterface.ngd MyULAInterface.pcf 
+par -w -intstyle ise -ol high -t 1 MyULAInterface_map.ncd MyULAInterface.ncd MyULAInterface.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MyULAInterface.twx MyULAInterface.ncd -o MyULAInterface.twr MyULAInterface.pcf 
+bitgen -intstyle ise -f MyULAInterface.ut MyULAInterface.ncd 

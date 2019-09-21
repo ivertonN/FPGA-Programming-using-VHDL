@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/centurio/SD projects/MyULAInterface/UlaInterface_test_isim_beh.exe" -prj "/home/centurio/SD projects/MyULAInterface/UlaInterface_test_beh.prj" "work.UlaInterface_test" 

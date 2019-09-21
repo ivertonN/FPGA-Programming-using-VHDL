@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/centurio/SD projects/Not4/Not4.ncd
+OUTFILE=/home/centurio/SD projects/Not4/Not4.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s700an-4fgg484
+WORKINGDIR=/home/centurio/SD projects/Not4
+LICENSE=WebPack
+USER_INFO=211710078_0_0_057

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/centurio/SD projects/MyFourBit2Complement/TestMyFourBitComplement_isim_beh.exe" -prj "/home/centurio/SD projects/MyFourBit2Complement/TestMyFourBitComplement_beh.prj" "work.TestMyFourBitComplement" 

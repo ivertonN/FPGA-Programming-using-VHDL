@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/centurio/SD projects/MyPlus1/TestPlus1_isim_beh.exe" -prj "/home/centurio/SD projects/MyPlus1/TestPlus1_beh.prj" "work.TestPlus1" 

@@ -1,0 +1,4 @@
+work	"../MultOneDigit/MultOneDigit.vhd"
+work	"../SumNDigit/SumNDigit.vhd"
+work	"../SumOneDigit/SumOneDigit.vhd"
+work	"MultNDigit.vhd"

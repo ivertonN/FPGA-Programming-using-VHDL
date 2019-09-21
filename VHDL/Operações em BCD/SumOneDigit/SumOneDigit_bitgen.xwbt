@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/SD_projects-20190509T025947Z-001/SD Projeto 2/SumOneDigit/SumOneDigit.ncd
+OUTFILE=/home/ise/SD_projects-20190509T025947Z-001/SD Projeto 2/SumOneDigit/SumOneDigit.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=/home/ise/SD_projects-20190509T025947Z-001/SD Projeto 2/SumOneDigit
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

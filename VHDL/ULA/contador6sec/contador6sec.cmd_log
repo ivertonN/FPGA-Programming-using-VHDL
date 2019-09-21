@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "/home/centurio/SD projects/contador6sec/contador6sec.xst" -ofn "/home/centurio/SD projects/contador6sec/contador6sec.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 "contador6sec.ngc" contador6sec.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o contador6sec_map.ncd contador6sec.ngd contador6sec.pcf 
+par -w -intstyle ise -ol high -t 1 contador6sec_map.ncd contador6sec.ncd contador6sec.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml contador6sec.twx contador6sec.ncd -o contador6sec.twr contador6sec.pcf 
+xst -intstyle ise -ifn "/home/centurio/SD projects/contador6sec/contador6sec.xst" -ofn "/home/centurio/SD projects/contador6sec/contador6sec.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 "contador6sec.ngc" contador6sec.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o contador6sec_map.ncd contador6sec.ngd contador6sec.pcf 
+par -w -intstyle ise -ol high -t 1 contador6sec_map.ncd contador6sec.ncd contador6sec.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml contador6sec.twx contador6sec.ncd -o contador6sec.twr contador6sec.pcf 
+bitgen -intstyle ise -f contador6sec.ut contador6sec.ncd 
+xst -intstyle ise -ifn "/home/centurio/SD projects/contador6sec/contador6sec.xst" -ofn "/home/centurio/SD projects/contador6sec/contador6sec.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 "contador6sec.ngc" contador6sec.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o contador6sec_map.ncd contador6sec.ngd contador6sec.pcf 
+par -w -intstyle ise -ol high -t 1 contador6sec_map.ncd contador6sec.ncd contador6sec.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml contador6sec.twx contador6sec.ncd -o contador6sec.twr contador6sec.pcf 
+bitgen -intstyle ise -f contador6sec.ut contador6sec.ncd 

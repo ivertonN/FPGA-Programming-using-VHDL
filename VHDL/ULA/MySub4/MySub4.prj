@@ -1,0 +1,5 @@
+vhdl work "../MySum1/MySum1.vhd"
+vhdl work "../Not4/Not4.vhd"
+vhdl work "../MySum4/MySum4.vhd"
+vhdl work "../MyFourBit2Complement/MyFourBit2Complement.vhd"
+vhdl work "MySub4.vhd"

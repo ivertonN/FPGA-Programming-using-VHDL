@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/iverton/Documentos/SD Projeto 2 atual/PROJETO BCD/Interface_main/test_main_isim_beh.exe" -prj "/home/iverton/Documentos/SD Projeto 2 atual/PROJETO BCD/Interface_main/test_main_beh.prj" "work.test_main" 

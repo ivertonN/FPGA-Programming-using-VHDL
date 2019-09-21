@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/iverton/Documentos/SD Projeto 2 atual/MultOneDigit/test_MultOneDigit_isim_beh.exe" -prj "/home/iverton/Documentos/SD Projeto 2 atual/MultOneDigit/test_MultOneDigit_beh.prj" "work.test_MultOneDigit" 

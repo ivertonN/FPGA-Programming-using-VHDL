@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/centurio/SD projects/MySub4/MySub4.xst" -ofn "/home/centurio/SD projects/MySub4/MySub4.syr" 

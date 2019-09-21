@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/iverton/Documentos/SD Projeto 2 atual/Interface_main/Interface_main.ncd
+OUTFILE=/home/iverton/Documentos/SD Projeto 2 atual/Interface_main/Interface_main.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s700an-4fgg484
+WORKINGDIR=/home/iverton/Documentos/SD Projeto 2 atual/Interface_main
+LICENSE=WebPack
+USER_INFO=211710078_0_0_733

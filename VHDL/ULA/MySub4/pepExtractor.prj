@@ -1,0 +1,5 @@
+work	"../MyFourBit2Complement/MyFourBit2Complement.vhd"
+work	"../MySum1/MySum1.vhd"
+work	"../MySum4/MySum4.vhd"
+work	"../Not4/Not4.vhd"
+work	"MySub4.vhd"

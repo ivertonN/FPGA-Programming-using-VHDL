@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/SD_projects/SD Projeto 2/LCD_interface/lcd.ncd
+OUTFILE=/home/ise/SD_projects/SD Projeto 2/LCD_interface/lcd.bit
+FAMILY=Spartan6
+PART=xc6slx45t-3fgg484
+WORKINGDIR=/home/ise/SD_projects/SD Projeto 2/LCD_interface
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620
